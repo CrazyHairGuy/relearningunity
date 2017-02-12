@@ -7,7 +7,8 @@ public class holsterone : MonoBehaviour {
      public Vector3 destination;
 	public GameObject holster;
 	public GameObject hip;
-	public GameObject gun;
+	public GameObject gun1;
+	public GameObject gun2;
      //public float speed = 0.1f;
  
      void Start () {
@@ -20,8 +21,8 @@ public class holsterone : MonoBehaviour {
 			{
 			transform.position = Vector3.Lerp (transform.position, holster.transform.position, /*speed*/25 * Time.deltaTime);
 
-			gun.SetActive (true);
-			gameObject.SetActive (false);
+			gun1.SetActive (true);
+			gun2.SetActive (false);
 			} 
 
      }

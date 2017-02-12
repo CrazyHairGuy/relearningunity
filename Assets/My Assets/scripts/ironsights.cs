@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ironsights : MonoBehaviour {
 
-     public Vector3 destination;
+     private Vector3 destination;
 	public GameObject ironsight;
 	public GameObject hip;
 	public Camera player;
