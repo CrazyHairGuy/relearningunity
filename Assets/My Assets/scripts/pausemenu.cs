@@ -18,14 +18,14 @@ public class pausemenu : MonoBehaviour {
 			menu.SetActive (isShowing);
 			pausecam.SetActive (isShowing);
 			player.SetActive (!isShowing);
-			/*if (isShowing == true) {
+			if (isShowing == true) {
 				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
 			}
 			else {
 				Cursor.lockState = CursorLockMode.Locked;
 				Cursor.visible = false;
-			}*/
+			}
 		}
 	}
 }
