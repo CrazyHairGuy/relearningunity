@@ -49,7 +49,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 3541143f9b7db244683f4bb4914490b0, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3b122e9434e6b2c45b44ff836cb64e99, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -88,7 +88,7 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 1
     - first:
         name: _GlossyReflections
       second: 1
@@ -103,7 +103,7 @@ Material:
       second: 1
     - first:
         name: _Parallax
-      second: 0.02
+      second: 0.005
     - first:
         name: _SmoothnessTextureChannel
       second: 0
