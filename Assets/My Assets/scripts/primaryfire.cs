@@ -29,7 +29,7 @@ public class primaryfire : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Mouse0))
 		{
 			GameObject bullet = Instantiate(projectile, barrel.transform.position, Quaternion.identity) as GameObject;
-			bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 1500);
+			bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 500);
 			//yield return new WaitForSeconds(0.3f);
 		}
 	}
