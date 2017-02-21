@@ -20,14 +20,14 @@ Platform assembly: D:\Documents\Unity Projects\git\relearningunity\relearninguni
 Loading D:\Documents\Unity Projects\git\relearningunity\relearningunity\DEFINATELY NOT PORTAL_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\Documents\Unity Projects\git\relearningunity\relearningunity\DEFINATELY NOT PORTAL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading D:\Documents\Unity Projects\git\relearningunity\relearningunity\DEFINATELY NOT PORTAL_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.151 seconds
+- Completed reload, in  0.132 seconds
 Platform assembly: D:\Documents\Unity Projects\git\relearningunity\relearningunity\DEFINATELY NOT PORTAL_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Documents\Unity Projects\git\relearningunity\relearningunity\DEFINATELY NOT PORTAL_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 6080x1375 at -2880,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.111736 ms
+UnloadTime: 4.133852 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 583c -> priority: 1 
-  Thread -> id: 1ee4 -> priority: 1 
+  Thread -> id: 21c0 -> priority: 1 
+  Thread -> id: 425c -> priority: 1 
