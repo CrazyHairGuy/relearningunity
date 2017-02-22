@@ -15,21 +15,26 @@ public class button : MonoBehaviour {
 	Vector3 door2T;
 	Vector3 buttonT;
 	public float speed = 5.0f;
-	private bool down = false;
+	//private bool down = false;
+	int count = 0;
 
 	void OnTriggerEnter(Collider collider){
 
-		Debug.Log ("touch");
+		count += 1;
 
-		down = true;
+		Debug.Log ("touch " + count);
+		//Debug.Log ("touch");
+		//down = true;
 	
 	}
 
 	void OnTriggerExit(Collider collider){
+		//Debug.Log ("untouch");
+		Debug.Log ("untouch " + count);
 
-		Debug.Log ("untouch");
+		count -= 1;
 
-		down = false;
+		//down = false;
 
 	}
 
@@ -42,7 +47,7 @@ public class button : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (down) {
+		if (count > 0) {
 			
 			door1.transform.position = Vector3.Lerp (door1.transform.position, door1Dest.transform.position, Time.deltaTime * speed);
 			door2.transform.position = Vector3.Lerp (door2.transform.position, door2Dest.transform.position, Time.deltaTime * speed);
