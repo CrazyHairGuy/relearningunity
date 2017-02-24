@@ -11,6 +11,7 @@ public class grab : MonoBehaviour {
 	public float rotSpeed = 5.0f;
 	public Vector3 offset = new Vector3(0, 1, 0);
 	Quaternion lookRot;
+	public GameObject xRay;
 	//GameObject[] pickUppable;
 
 	/*Quaternion lookRot(Quaternion cameraRot){
@@ -38,24 +39,34 @@ public class grab : MonoBehaviour {
 		grabbedObject = grabObject;
 		grabbedObjectSize = grabObject.GetComponent<MeshRenderer> ().bounds.size.magnitude;
 		grabbedObject.GetComponent<Rigidbody> ().isKinematic = true;
+		grabbedObject.GetComponent<BoxCollider> ().isTrigger = true;
+		xRay.SetActive (true);
 		
 	}
 
 	bool CanGrab(GameObject candidate){
 
-		return candidate.CompareTag("grab");
+		if(candidate.CompareTag("grab")/* && grabbedObject.GetComponent<grabbable>()*/)
+			return true;
+		return false;
 
 	}
 
 	void DropObject(){
 
+		Vector3 position = gameObject.transform.position;
+		RaycastHit raycastHit;
+		Vector3 target = position + Camera.main.transform.forward * 5;
+
 		if (grabbedObject == null)
 			return;
-		if (grabbedObject.GetComponent<Rigidbody> () != null)
+		if (grabbedObject.GetComponent<Rigidbody> () != null && grabbedObject.GetComponent<grabbable>().count == 0 /*&& Physics.Linecast (position, target, out raycastHit) == grabbedObject*/) {
 			grabbedObject.GetComponent<Rigidbody> ().isKinematic = false;
-			grabbedObject.GetComponent<Rigidbody> ().velocity = this.GetComponent<Rigidbody>().velocity;
-		grabbedObject = null;
-
+			grabbedObject.GetComponent<BoxCollider> ().isTrigger = false;
+			grabbedObject.GetComponent<Rigidbody> ().velocity = this.GetComponent<Rigidbody> ().velocity;
+			xRay.SetActive (false);
+			grabbedObject = null;
+		}
 	}
 	
 	// Update is called once per frame
