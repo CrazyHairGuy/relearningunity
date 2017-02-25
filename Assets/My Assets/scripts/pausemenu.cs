@@ -5,7 +5,7 @@ public class pausemenu : MonoBehaviour {
 	public GameObject menu;
 	public GameObject pausecam;
 	public GameObject player;
-	public GameObject hud;
+	//public GameObject hud;
 	private bool isShowing = false;
 	// Use this for initialization
 	void Start () {
@@ -19,14 +19,16 @@ public class pausemenu : MonoBehaviour {
 			menu.SetActive (isShowing);
 			pausecam.SetActive (isShowing);
 			player.SetActive (!isShowing);
-			hud.SetActive (!isShowing);
+			//hud.SetActive (!isShowing);
 			if (isShowing == true) {
 				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
+				Time.timeScale = 0.0f;
 			}
 			else {
 				Cursor.lockState = CursorLockMode.Locked;
 				Cursor.visible = false;
+				Time.timeScale = 1.0f;
 			}
 		}
 	}

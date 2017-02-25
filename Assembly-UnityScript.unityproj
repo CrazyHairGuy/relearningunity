@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8413BAAE-E6B8-544B-1BC5-E18CF33DE3B2}</ProjectGuid>
+    <ProjectGuid>{57E998BC-318E-AF3E-D818-EEA56CC12A96}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-UnityScript</AssemblyName>
@@ -184,12 +184,12 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="SabreCSG.Core">
- <HintPath>D:/Documents/Unity Projects/git/relearningunity/relearningunity/Assets/SabreCSG/Scripts/SabreCSG.Core.dll</HintPath>
+ <HintPath>C:/Users/trevo/Documents/Unity Projects/restartrelearn/Assets/SabreCSG/Scripts/SabreCSG.Core.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{41995AD7-0BC7-9283-33FF-89B9CE049E7F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{CA32A7C0-E1F9-0B58-EEB6-B0DBF7155381}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
